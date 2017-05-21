@@ -6,12 +6,27 @@
             <field name="arch" type="xml">
                 <form string="Create">
                     <sheet>
-                        <group>
-                            <field name="name"/>
-                            <field name="qty"/>
+                        <group name="main_grid">
+                            <group name="col-1">
+                                <field name="name"/>
+                            </group>
+                            <group name="col-2">
+                                <field name="qty"/>
+                            </group>
                         </group>
                     </sheet>
                 </form>
+            </field>
+        </record>
+
+        <record id="library_book_view_list" model="ir.ui.view">
+            <field name="name">Book list</field>
+            <field name="model">library.book</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom">
+                    <field name="name"/>
+                    <field name="qty"/>
+                </tree>
             </field>
         </record>
     </data>
