@@ -14,6 +14,7 @@
     ],
     'data': [
         'views/library_book_menu.xml',
+        'views/library_book_views.xml',
     ],
     'sequence': 1,
     'application': True,
