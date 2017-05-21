@@ -10,9 +10,10 @@
     'summary': 'Related Field vs Search',
     'description': """""",
     'depends': [
-        'base'
+        'base','product','website',
     ],
     'data': [
+        'views/related_field_views.xml',
     ],
     'sequence': 1,
     'application': True,
